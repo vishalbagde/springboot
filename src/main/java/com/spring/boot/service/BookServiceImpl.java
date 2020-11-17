@@ -15,7 +15,7 @@ import com.spring.boot.entity.Book;
 @Service
 public class BookServiceImpl implements BookService {
 
-	@Autowired
+	@Autowired(required = true)
 	BookRepo bookRepo;
 	
 	@Override

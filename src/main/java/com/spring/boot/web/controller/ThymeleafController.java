@@ -41,5 +41,20 @@ public class ThymeleafController {
 		model.addAttribute("namelist",namelist);
 		return "booklist";
 	}
+	@RequestMapping("/condition")
+	public String conditionHandler(Model m)
+	{
+		System.out.println("condtion controller call");
+		m.addAttribute("isActive",true);
+		return "condition";
+	}
+	
+	@RequestMapping("/fragment")
+	public String fragmentHandler(Model m)
+	{
+		System.out.println("condtion controller call");
+		m.addAttribute("isActive",true);
+		return "service";
+	}
 
 }

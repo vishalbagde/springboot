@@ -23,9 +23,7 @@ public class SpringbootApplication extends SpringBootServletInitializer {
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = SpringApplication.run(SpringbootApplication.class, args);
 		
-		
-		UserRepo userrepo = context.getBean(UserRepo.class);
-		
+		 UserRepo userrepo = context.getBean(UserRepo.class);
 		
 		 BookRepo bookrepo = context.getBean(BookRepo.class);
 		 
