@@ -37,7 +37,7 @@ public class FileUploadHelper {
 		boolean f=false;
 		try
 		{
-			InputStream is = file.getInputStream();
+			InputStream is = file.getInputStream();	
 			byte data[]=new byte[is.available()];
 			is.read(data);
 			String uploadloc=UPLOAD_DIR1+"\\"+file.getOriginalFilename();

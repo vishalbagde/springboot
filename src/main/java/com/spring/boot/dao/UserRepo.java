@@ -7,20 +7,20 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.spring.boot.entity.User;
+import com.spring.boot.entity.Users;
 
 import net.bytebuddy.implementation.bind.annotation.Super;
 
-public interface UserRepo extends JpaRepository<User, Integer> {
+public interface UserRepo extends JpaRepository<Users, Integer> {
 
-	public List<User> findByNameAndCity(String name, String city);
+	public List<Users> findByNameAndCity(String name, String city);
 
-	@Query("SELECT u FROM User u")
-	public List<User> getAllUser();
+	@Query("SELECT u FROM Users u")
+	public List<Users> getAllUser();
 
-	@Query("SELECT u FROM User u WHERE u.name=:n")
-	public List<User> getAllUserByName(@Param("n") String name);
+	@Query("SELECT u FROM Users u WHERE u.name=:n")
+	public List<Users> getAllUserByName(@Param("n") String name);
 
-	@Query(value = "select * from user", nativeQuery = true)
-	public List<User> getAllUserNative();
+	@Query(value = "select * from Users", nativeQuery = true)
+	public List<Users> getAllUserNative();
 }

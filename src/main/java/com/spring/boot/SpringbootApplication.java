@@ -13,7 +13,7 @@ import com.spring.boot.dao.BookRepo;
 import com.spring.boot.dao.UserRepo;
 import com.spring.boot.entity.Author;
 import com.spring.boot.entity.Book;
-import com.spring.boot.entity.User;
+import com.spring.boot.entity.Users;
 
 
 

@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.UniqueConstraint;
 
 @Entity
-public class User {
+public class Users {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -18,11 +18,11 @@ public class User {
 	private String name;
 	private String city;
 	
-	public User() {
+	public Users() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public User(int id, String name, String city) {
+	public Users(int id, String name, String city) {
 		super();
 		this.id = id;
 		this.name = name;
